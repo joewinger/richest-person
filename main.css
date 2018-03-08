@@ -18,6 +18,11 @@ h3 {
    margin-top: -50px;
 }
 
+#info {
+   color: #BBB;
+   font-size: 1.2rem;
+}
+
 #donate-section {
    position: fixed;
    bottom: 0;
