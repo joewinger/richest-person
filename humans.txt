@@ -1,0 +1,9 @@
+I don't know how to make one of these files
+
+I made this. My name's Joe Winger. The date is 03-07-18
+My teacher Mrs. Fleuso made me think of it as we both speculated on the current richest person alive.
+
+Also thanks to Jesse Okeya for https://github.com/jesseokeya/Forbes400, I'm hella lazy and probably wouldn't've made this if this super cool API didn't exist.
+
+Thanks,
+Don't do drugs.

@@ -1,0 +1,16 @@
+html, body {
+   height: 100%;
+   margin: 0;
+}
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+   font-size: 1.4em;
+}
+h1, p {
+   margin: 0;
+   padding: 0;
+}
