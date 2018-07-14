@@ -12,7 +12,7 @@ var app = new Vue({
 $.getJSON(JSONurl, (data) => {
    var name = data[0]['name'];
    var title = data[0]['title'];
-   var worth = "$" + (Math.round(data[0]['realTimeWorth'] / 100) / 10) + " B";
+   var worth = "$" + (Math.round(data[0]['realTimeWorth'] / 100) / 10) + "B";
 
    Vue.set(app, 'name', name);
    Vue.set(app, 'title', title);
