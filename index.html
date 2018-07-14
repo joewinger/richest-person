@@ -26,9 +26,11 @@
 	<br>
 
 	<div id="app">
-		<h1>{{ name }}</h1>
-		<p>{{ title }}</p>
-		<span>Current Net Worth: {{ worth }}</span>
+		<div v-cloak>
+			<h1>{{ name }}</h1>
+			<p>{{ title }}</p>
+			<span>Current Net Worth: {{ worth }}</span>
+		</div>
 	</div>
 
 	<div id='donate-section'>
