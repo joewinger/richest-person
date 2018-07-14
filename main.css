@@ -9,6 +9,7 @@ body {
    flex-direction: column;
 
    font-size: 1.4em;
+   text-align: center;
 }
 h1, p {
    margin: 0;
