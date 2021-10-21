@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
-
-<!--
-	This took me like 10 minutes thanks to an open source API
-	someone put on GitHub. Open Source is the future.
-	Go out and make something.
--->
-
 <head>
-	<title>Who is the Richest Person Alive?</title>
+	<title>Richest Person Alive</title>
 
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -17,18 +10,20 @@
 	<link type='text/plain' rel='author' href='humans.txt'>
 	<link rel='shortcut icon' href='favicon.png' type='image/png'>
 
+	<link rel='preconnect' href='https://fonts.googleapis.com'>
+	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+	<link href='https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap' rel='stylesheet'>
 	<link rel='stylesheet' href='main.css'>
 </head>
 
 <body>
 
-	<h3>Who's the richest person alive?</h3>
-	<br>
+	<h4 id="title">The richest person alive is currently...</h4>
 
-	<div id="app">
-		<div v-cloak>
-			<h1>{{ name }}</h1>
-			<p>{{ title }}</p>
+	<div id='app'>
+		<div v-cloak v-if="name !== ''">
+			<h1 id='name'>{{ name }}</h1>
+			<p id='source'>Source: {{ source }}</p>
 			<span id='worth'>Current Net Worth: {{ worth }}</span>
 		</div>
 	</div>
@@ -37,8 +32,6 @@
 		<a title="Donate!" href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SLPWNPB7AA9G2&lc=US&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted'>Help me get my name here</a>
 	</div>
 
-	<script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-	 crossorigin='anonymous'></script>
 	<script src='https://cdn.jsdelivr.net/npm/vue'></script>
 	<script src='main.js'></script>
 
