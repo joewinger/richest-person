@@ -1,11 +1,13 @@
-var JSONurl = 'https://forbes400.herokuapp.com/api/forbes400/real-time?limit=1';
+const JSONurl = 'https://forbes400.herokuapp.com/api/forbes400/real-time?limit=1';
 
-var app = new Vue({
-   el: '#app',
-   data: {
-      name: localStorage['name'] || "",
-      source: localStorage['source'] || "",
-      worth: localStorage['worth'] || ""
+
+Vue.createApp({
+   data() {
+      return {
+         name: localStorage['name'] || "",
+         source: localStorage['source'] || "",
+         worth: localStorage['worth'] || ""
+      }
    },
    async created() {
       const response = await fetch(JSONurl);
@@ -19,4 +21,4 @@ var app = new Vue({
       localStorage['source'] = this.source;
       localStorage['worth'] = this.worth;
    }
-});
+}).mount('#app');

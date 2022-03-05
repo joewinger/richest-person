@@ -5,4 +5,4 @@ Live-updating, state-of-the-art global wealth tracker leveraging cutting-edge we
 
 Pulls the richest person from Forbes using [This API](https://github.com/jesseokeya/Forbes400).
 
-Pretty simple app built with [Vue 2](https://vuejs.org/) and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+Pretty simple app built with [Vue 3](https://vuejs.org/) and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
